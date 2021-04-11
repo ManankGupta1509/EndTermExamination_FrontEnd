@@ -16,16 +16,15 @@ function CallApi()
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var list = JSON.parse(this.responseText);
-            var confirmed = 0;
-            var death = 0;
-            var active = 0;
-            for (var i = 0; i < list.length; i++) {
-                confirmed = confirmed + list[i].Confirmed;
-                active = active + list[i].Active;
-                death = death + list[i].Deaths;
-            }
-            create(confirmed, active, death);
-
+            
+            for (var i = 0; i < list.length; i++) {  
+            create(list[i].Confirmed,list[i].Active,list[i].Deaths);
+        }
+        }
+        else if(this.status >= 400)
+        {
+         alert("Some Thing Went Wrong");
+         return false;
         }
     };
     xhttp.send();
