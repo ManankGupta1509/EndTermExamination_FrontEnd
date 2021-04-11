@@ -1,0 +1,105 @@
+/*Putting the whole page in box*/
+* {box-sizing: border-box;}
+
+/*Styling of overall Body*/
+body { 
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*fixing the image to set the background*/
+#imf{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button2 {
+    background-color: orange; 
+    color: black; 
+    border: 3px solid #008CBA;
+    margin-right: 25px;
+    border-radius: 6px;
+    
+  }
+  
+  .button2:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+  }
+
+input{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 4px 4px
+}
+
+.db {
+  background-color: blue;
+  color: aliceblue;
+    width: 30%;
+    box-align: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /***************************************Thank You by Manank Gupta****************************************************************/
