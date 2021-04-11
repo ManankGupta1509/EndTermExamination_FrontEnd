@@ -19,6 +19,7 @@ function CallApi()
             
             for (var i = 0; i < list.length; i++) {  
             create(list[i].Confirmed,list[i].Active,list[i].Deaths);
+            
         }
         }
         else if(this.status >= 400)
